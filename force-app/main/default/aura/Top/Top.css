@@ -1,2 +1,22 @@
 .THIS {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.THIS .slds-border_top {
+    text-align: center; 
+    font-size: 60px; 
+    color: black;
+}
+
+.THIS .slds-p-left {
+    display: flex; 
+    width: 100%; 
+    height: 10vh; 
+    flex: 0 0 auto; 
+    align-items: center;
+}
+
+.THIS .slds-input {
+    width: 70%;
+    margin: 10px;
 }

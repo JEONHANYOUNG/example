@@ -1,29 +1,38 @@
-<aura:component>
-    <aura:attribute name="header" type="String" default="Lorem">
-    <div>
-        <div class="slds-page-header">
-            <div class="slds-page-header__row">
-                <div class="slds-page-header__col-title">
-                    <div class="slds-media">
-                        <div class="slds-media__figure">
-                            <span class="slds-icon_container slds-icon-standard-opportunity" title="opportunity">
-                                <span class="slds-assistive-text">opportunity</span>
-                            </span>
-                        </div>
-                        <div class="slds-media__body">
-                            <div class="slds-page-header__name">
-                                <div class="slds-page-header__name-title">
-                                    <h1>
-                                        <span class="slds-page-header__title slds-truncate" title="Rohde Corp - 80,000 Widgets">Rohde Corp - 80,000 Widgets</span>
-                                    </h1>
-                                </div>
-                            </div>
-                            <p class="slds-page-header__name-meta">Mark Jaeckal • Ucsnlimited Customer • 11/13/15</p>
-                        </div>
-                    </div>
-                </div>
+<aura:component implements="forceCommunity:availableForAllPageTypes" access="global">
+    <aura:attribute name="hello" type="String" default="" />
+    
+    <div class="slds-grid slds-gutters slds-wrap" style="width: 80%; margin: 20px auto 20px auto;">
+        <div class="slds-col slds-size_3-of-12" style="display: flex; justify-content: center; height: 100px;">
+            <div style="border: 2px solid black; width: 90%; height: 100%; border-radius: 5px;">
+                <span> 1번 </span>
             </div>
-        </div>        
+        </div>
+        <div class="slds-col slds-size_3-of-12" style="display: flex; justify-content: center; height: 100px;">
+            <div style="border: 2px solid black; width: 90%; height: 100%; border-radius: 5px;">
+                <span> 2번 </span>
+            </div>
+        </div>
+        <div class="slds-col slds-size_3-of-12" style="display: flex; justify-content: center; height: 100px;">            
+            <div style="border: 2px solid black; width: 90%; height: 100%; border-radius: 5px;">
+                <span> 3번 </span>
+            </div>
+        </div>
+        <div class="slds-col slds-size_3-of-12" style="display: flex; justify-content: center; height: 100px;">
+            <div style="border: 2px solid black; width: 90%; height: 100%; border-radius: 5px;">
+                <span> 4번 </span>
+            </div>
+        </div>
     </div>
-    </aura:attribute>
+    <div class="slds-card" style=" margin-left: 20px; width: 70%;  margin-left: 15%; margin-top: 10%; ">
+        <div class="slds-card" style="display: flex; flex-direction: column; border: 2px solid black; padding: auto; height: 100px;">
+            <div class="slds-p-around_medium">My Components</div>
+        </div>
+        <div class="slds-card" style="display: flex; flex-direction: column; border: 2px solid black; padding: auto; margin-top: 30px; height: 100px;">
+            <div class="slds-p-around_medium">My Components</div>
+        </div>
+        <div>
+            <input type="text" onchange="{!c.onchangeinput}" style="margin-top: 20px;"/>
+            <button onclick="{!c.tap}" style="margin-top: 20px;">클릭</button>
+        </div>
+    </div>
 </aura:component>	
